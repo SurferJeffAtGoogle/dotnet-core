@@ -54,6 +54,10 @@ namespace bookshelf
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                    name: "health",
+                    template: "_ah/health",
+                    defaults: new { controller = "Home", action = "Health" });
             });
         }
     }

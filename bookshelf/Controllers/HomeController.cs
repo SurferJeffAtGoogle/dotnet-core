@@ -27,6 +27,11 @@ namespace bookshelf.Controllers
             return View();
         }
 
+        public IActionResult Health()
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();
