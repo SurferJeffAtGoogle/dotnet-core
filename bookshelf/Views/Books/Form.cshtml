@@ -20,7 +20,7 @@
 
 @if (!Model.IsValid)
 {
-    <div class= "alert alert-danger" asp-validation-summary="ValidationSummary.All"></div>
+    <div class= "alert alert-danger" asp-validation-summary="All"></div>
 }
 <form asp-controller="Books" asp-action="@Model.FormAction" id="book-form">
     <div class="form-group">
