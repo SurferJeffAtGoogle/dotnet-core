@@ -18,6 +18,7 @@ COPY . webapp
 RUN /bin/bash -c 'cd webapp; dotnet restore; dotnet build'
 
 ENV ASPNETCORE_URLS="http://*:8080"
+ENV GOOGLE_PROJECT_ID="bookshelf-dotnet"
 
 EXPOSE 8080
 
